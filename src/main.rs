@@ -24,6 +24,8 @@ fn main() {
             first / second
         } else if operand == '*' {
             first * second
+        } else if operand == '%' {
+            first % second
         } else {
             0.0
         }
@@ -34,6 +36,7 @@ fn main() {
             '+' => first + second,
             '-' => first - second,
             '/' => first / second,
+            '%' => first % second,
             '*' | 'x' | 'X' => first * second,
             _ => panic!("Invalid operand")
         }
